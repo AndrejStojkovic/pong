@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+    font-family: "Bit9";
+    color: white;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    margin: auto;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a { margin: 0; }
+
+.main-menu {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.title, .small { 
+    text-align: center;
+}
+
+.title { font-size: 150px; padding-left: 15px; }
+.small { font-size: 28.3px; text-align: center; }
+
+.dugminja {
+    padding-top: 40px;
+}
+
+button { display: block; margin: 15px 0; }
+
+.dugme {
+    font-family: "Bit9";
+    text-align: center;
+    font-size: 28px;
+    color: #f5f5f5;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.dugme:hover {
+    color: gold;
+    transition: 0.2s;
+    transform: translateY(-2px);
+}
+
+.icon {
+    color: white;
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    color: lightgray;
+    transition: 0.2s;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+.link { color: white; }
+
+/***************/
+
+.tab {
+    width: 400px;
+    height: auto;
+    padding: 15px;
+    background-color: black;
+    border: 1px solid #f5f5f5;
+    z-index: 5;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tabT { padding-top: 5px; }
+
+.tabTitle {
+    font-size: 32px;
+    padding-bottom: 5px;
+    color: gold;
+}
+
+.dugminjaMenu {
+    padding-top: 15px;
+}
+
+.dugmeMenu {
+    font-family: "Bit9";
+    text-align: center;
+    font-size: 24px;
+    color: #f5f5f5;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 7px;
+    transition: 0.2s;
+}
+
+.dugmeMenu:hover {
+    color: gold;
+    transition: 0.2s;
+    transform: translateY(-2px);
+}
+
+.abouttext {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.space {
+    padding-bottom: 5px;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Bit5x3";
+    src: url("../fonts/bit5x3.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Bit9";
+    src: url("../fonts/bit9x9.otf") format("opentype");
+}

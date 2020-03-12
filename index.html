@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONG Game</title>
+
+    <!-- Local -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    
+
+    <!-- Server -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2deaac5f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="main-menu">
+        <div class="align-center">
+        <a class="title">PONG</a><br>
+        <a class="small">by Andrej Stojkovic</a><br></div>
+        
+        <div class="dugminja">
+            <center>
+            <button class="dugme start" onclick="startTab()">Start Game</button>
+            <button class="dugme options" onclick="optionTab()">Options</button>
+            <button class="dugme options" onclick="ctrlsTab()">Controls</button>
+            <button class="dugme about" onclick="aboutTab()">About</button> <br>
+
+            <br><br>
+            <a class="icon" href="https://www.facebook.com/StojkovicAndrej"><i class="fab fa-facebook"></i></a>
+            <a class="icon" href="https://github.com/AndrejStojkovic"><i class="fab fa-github"></i></a><br><br>
+            
+            <br>
+            <a class="copyright">&copy; Copyright <a id="year"></a>, PONG by Andrej Stojkovic<br>
+                Original game by <a class="link" href="https://en.wikipedia.org/wiki/Pong">Atari</a>
+            </a>
+
+            </center>
+        </div>
+    </div>
+
+    <div class="tab" id="startTab" style="display: none;">
+        <center>
+            <div class="tabT"><a class="tabTitle">Start Game</a></div>
+            <div class="dugminjaMenu">
+                <button class="dugmeMenu" onclick="startGame(1)">1 Player</button>
+                <button class="dugmeMenu" onclick="startGame(2)"">2 Players</button>
+                <button class="dugmeMenu" onclick="startGame(3)"">AI vs AI</button>
+                <button class="dugmeMenu" onclick="closeTab()">Close</button>
+            </div>
+        </center>
+    </div>
+
+    <div class="tab" id="optionTab" style="display: none;">
+        <center>
+            <div class="tabT"><a class="tabTitle">Options</a></div>
+            <div class="dugminjaMenu">
+                <button class="dugmeMenu" onclick="changeSound()">Sounds: <a id="snd">ON</a></button>
+                <button class="dugmeMenu" onclick="closeTab()">Close</button>
+            </div>
+        </center>
+    </div>
+
+    <div class="tab" id="ctrlsTab" style="display: none;">
+        <center>
+            <div class="tabT"><a class="tabTitle">Controls</a></div><br><br>
+            <a class="abouttext"><b class="space">Player 1:</b><br><br>W Button - Up<br>S Button - Down</a><br><br><br>
+            <a class="abouttext"><b class="space">Player 2:</b><br><br>Up Arrow - Up<br>Down Arrow - Down</a><br>
+            <div class="dugminjaMenu">
+                <button class="dugmeMenu" onclick="closeTab()">Close</button>
+            </div>
+        </center>
+    </div>
+
+    <div class="tab" id="aboutTab" style="display: none;">
+        <center>
+            <div class="tabT"><a class="tabTitle">About</a></div><br><br>
+            <a class="abouttext">PONG by Andrej Stojkovic is a remake from the classic game Pong from Atari games.</a>
+            <div class="dugminjaMenu">
+                <button class="dugmeMenu" onclick="closeTab()">Close</button>
+            </div>
+        </center>
+    </div>
+
+    <script>var d = new Date(); var y = d.getFullYear(); document.getElementById('year').innerHTML = y;</script>
+    <script src="js/start.js"></script>
+    <script src="js/pong.js"></script>
+    <script src="js/sounds.js"></script>
+</body>
+</html>
